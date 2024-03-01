@@ -1,0 +1,47 @@
+<!-- 
+  @name: Assignement1
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Arvinder Singh Ghumman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff</title>
+  <script src="script.js"></script>
+  <script src="staff.js"></script>
+</head>
+<body>
+  <!-- nav -->
+  <header class="nav">
+  <ul>
+    <a href="index.html"><li>Home</li></a>
+    <a href="markToGrade.html"><li>MarkToGrade</li></a>
+    <a href="staff.html"><li>Staff</li></a>
+    <a href="weather.html"><li>Weather</li></a>
+  </ul>
+  <link rel="stylesheet" href="style.css">
+</header>
+
+<!-- main content -->
+<div class="main staff">
+  <h1>STAFF</h1>
+  <section>
+    <label for="sort">Sort By: </label>
+    <select name="sort" id="sort">
+      <option value="name">Name</option>
+      <option value="salary">Salary</option>
+    </select>
+  </section>
+  <div id="table"></div>
+</div>
+
+<!-- footer -->
+<footer>
+  <p id="date"></p>
+  <p>© Arvinder Singh Ghumman</p>
+</footer>
+</body>
+</html>

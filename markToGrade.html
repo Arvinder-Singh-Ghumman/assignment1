@@ -1,0 +1,46 @@
+<!-- 
+  @name: Assignement1
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Arvinder Singh Ghumman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark to Grade Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- nav -->
+  <header class="nav">
+    <ul>
+      <a href="index.html"><li>Home</li></a>
+      <a href="markToGrade.html"><li>MarkToGrade</li></a>
+      <a href="staff.html"><li>Staff</li></a>
+      <a href="weather.html"><li>Weather</li></a>
+    </ul>
+  </header>
+
+  <!-- main content -->
+  <div class="main markToGrade">
+      <h1>Mark to Grade Converter</h1>
+      <form onsubmit="markToGrade(event)">
+        <label for="marks">Marks: </label>
+        <input type="text" name="marks" id="marks" placeholder="Enter your marks here">
+        <br>
+        <p id="validationMessage"></p>
+        <input type="submit" value="Calculate">
+      </form>
+      <p id="output"></p>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p id="date"></p>
+    <p>© Arvinder Singh Ghumman</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- 
+  @name: Assignement1
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Arvinder Singh Ghumman
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="nav">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="markToGrade.html"><li>MarkToGrade</li></a>
+        <a href="staff.html"><li>Staff</li></a>
+        <a href="weather.html"><li>Weather</li></a>
+      </ul>
+    </header>
+
+    <!-- main content -->
+    <div class="main">
+      <!-- profile -->
+      <img
+        src="./assets/ptofileprofile.png"
+        alt="Arvinder Singh"
+        height="500px"
+      />
+      <section>
+        <p id="imgName"></p>
+        <p>
+          Hello! I am a dedicated and enthusiastic student currently enrolled in
+          a Software Development Diploma program. My passion for technology and
+          problem-solving led me to pursue this educational journey. Throughout
+          my studies, I have been actively engaging with various programming
+          languages, software development methodologies, and practical projects.
+          I am committed to honing my skills and staying updated with the latest
+          industry trends. 
+        </p>
+        <p>
+          I thrive on challenges and am eager to contribute my
+          knowledge to the ever-evolving field of software development. As a
+          student, I am not only gaining technical expertise but also fostering
+          a mindset of continuous learning and innovation.
+        </p>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p id="date"></p>
+      <p>© Arvinder Singh Ghumman</p>
+    </footer>
+  </body>
+  <script>
+    // adding date to the footer
+    window.onload = () => {
+      var date = new Date();
+      // name appears after 10 seconds
+      setTimeout(() => {
+        document.getElementById("imgName").innerText = "Arvinder Singh Ghumman";
+      }, 10000);
+      document.getElementById("date").innerText =
+        date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear();
+    };
+  </script>
+</html>
